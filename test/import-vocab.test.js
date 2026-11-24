@@ -12,5 +12,5 @@ test('supports TSV and rejects duplicate/missing rows', () => {
   const rows = parse('level\thanzi\tpinyin\tmeaning\n1\t你好\tnǐ hǎo\txin chào\n1\t你好\tnǐ hǎo\txin chào\n10\t\t\n');
   const result = validate(rows);
   assert.equal(result.clean.length, 1);
-  assert.equal(result.errors.length, 2);
+  assert.equal(result.errors.length, 3);
 });
