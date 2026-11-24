@@ -1,0 +1,12 @@
+services:
+  hsk:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"   # trên VPS: đổi thành "127.0.0.1:3000:3000" và đặt Caddy/Nginx phía trước
+    environment:
+      TRUST_PROXY: "0"   # đặt "1" khi chạy sau reverse proxy (để rate-limit nhận đúng IP)
+    volumes:
+      - hsk-data:/data
+volumes:
+  hsk-data:

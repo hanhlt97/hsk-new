@@ -1,0 +1,11 @@
+{
+  "name": "汉 HSK",
+  "short_name": "HSK",
+  "description": "Luyện gõ và học từ vựng tiếng Trung theo HSK",
+  "start_url": "/#/home",
+  "display": "standalone",
+  "background_color": "#faf6ef",
+  "theme_color": "#c0392b",
+  "lang": "vi",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
